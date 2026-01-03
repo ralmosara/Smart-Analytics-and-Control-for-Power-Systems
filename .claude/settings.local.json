@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(nest new:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(cat:*)",
+      "Bash(npm run migration:generate:*)",
+      "Bash(npm run migration:create:*)",
+      "Bash(docker exec:*)",
+      "Bash(npm run migration:run:*)"
+    ]
+  }
+}

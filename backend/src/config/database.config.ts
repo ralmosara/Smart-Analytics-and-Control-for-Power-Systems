@@ -12,7 +12,7 @@ export const getDatabaseConfig = (
   database: configService.get<string>('DB_NAME', 'smart_power_db'),
   schema: configService.get<string>('DB_SCHEMA', 'public'),
   entities: [__dirname + '/../**/*.entity{.ts,.js}'],
-  synchronize: configService.get<boolean>('DB_SYNCHRONIZE', true), // Set to false in production
+  synchronize: false, // Always use migrations, never auto-sync
   logging: configService.get<boolean>('DB_LOGGING', false),
   migrations: [__dirname + '/../database/migrations/*{.ts,.js}'],
   migrationsRun: false,

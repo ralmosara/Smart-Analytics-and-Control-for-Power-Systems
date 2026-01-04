@@ -3,6 +3,7 @@ import converterReducer from './slices/converterSlice';
 import busReducer from './slices/busSlice';
 import resReducer from './slices/resSlice';
 import alertReducer from './slices/alertSlice';
+import historicalReducer from './slices/historicalSlice';
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     bus: busReducer,
     res: resReducer,
     alert: alertReducer,
+    historical: historicalReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

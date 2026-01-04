@@ -7,6 +7,8 @@ import { AppService } from './app.service';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { DataIngestionModule } from './modules/data-ingestion/data-ingestion.module';
 import { PersistenceModule } from './modules/persistence/persistence.module';
+import { SeederModule } from './database/seeders/seeder.module';
+import { HistoricalDataModule } from './modules/historical/historical.module';
 import { getDatabaseConfig } from './config/database.config';
 
 @Module({
@@ -41,9 +43,10 @@ import { getDatabaseConfig } from './config/database.config';
     NotificationsModule,
     PersistenceModule,
     DataIngestionModule,
+    SeederModule,
+    HistoricalDataModule,
 
     // More modules will be added here as we build them
-    // HistoricalDataModule,
     // AuthModule,
     // ConvertersModule,
     // NetworkAnalysisModule,

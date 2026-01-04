@@ -33,10 +33,10 @@ export class RESSnapshot {
   utilizationFactor: number;
 
   @Column({ type: 'decimal', precision: 10, scale: 2, nullable: true })
-  irradiance: number;
+  irradiance: number | null;
 
   @Column({ type: 'decimal', precision: 5, scale: 2, nullable: true, name: 'wind_speed' })
-  windSpeed: number;
+  windSpeed: number | null;
 
   @Column({ type: 'decimal', precision: 5, scale: 2 })
   temperature: number;

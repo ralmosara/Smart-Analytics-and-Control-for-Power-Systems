@@ -6,8 +6,8 @@ export declare class RESSnapshot {
     generation: number;
     capacity: number;
     utilizationFactor: number;
-    irradiance: number;
-    windSpeed: number;
+    irradiance: number | null;
+    windSpeed: number | null;
     temperature: number;
     createdAt: Date;
 }

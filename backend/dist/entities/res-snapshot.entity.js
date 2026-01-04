@@ -55,11 +55,11 @@ __decorate([
 ], RESSnapshot.prototype, "utilizationFactor", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'decimal', precision: 10, scale: 2, nullable: true }),
-    __metadata("design:type", Number)
+    __metadata("design:type", Object)
 ], RESSnapshot.prototype, "irradiance", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'decimal', precision: 5, scale: 2, nullable: true, name: 'wind_speed' }),
-    __metadata("design:type", Number)
+    __metadata("design:type", Object)
 ], RESSnapshot.prototype, "windSpeed", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'decimal', precision: 5, scale: 2 }),

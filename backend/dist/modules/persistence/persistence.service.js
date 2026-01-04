@@ -81,8 +81,8 @@ let PersistenceService = PersistenceService_1 = class PersistenceService {
         snapshot.generation = data.generation;
         snapshot.capacity = data.capacity;
         snapshot.utilizationFactor = data.utilizationFactor;
-        snapshot.irradiance = data.environmentalData.irradiance || null;
-        snapshot.windSpeed = data.environmentalData.windSpeed || null;
+        snapshot.irradiance = data.environmentalData.irradiance ?? null;
+        snapshot.windSpeed = data.environmentalData.windSpeed ?? null;
         snapshot.temperature = data.environmentalData.temperature;
         this.resBuffer.push(snapshot);
         if (this.resBuffer.length >= this.BATCH_SIZE) {

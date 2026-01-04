@@ -16,6 +16,8 @@ const app_service_1 = require("./app.service");
 const notifications_module_1 = require("./modules/notifications/notifications.module");
 const data_ingestion_module_1 = require("./modules/data-ingestion/data-ingestion.module");
 const persistence_module_1 = require("./modules/persistence/persistence.module");
+const seeder_module_1 = require("./database/seeders/seeder.module");
+const historical_module_1 = require("./modules/historical/historical.module");
 const database_config_1 = require("./config/database.config");
 let AppModule = class AppModule {
 };
@@ -45,6 +47,8 @@ exports.AppModule = AppModule = __decorate([
             notifications_module_1.NotificationsModule,
             persistence_module_1.PersistenceModule,
             data_ingestion_module_1.DataIngestionModule,
+            seeder_module_1.SeederModule,
+            historical_module_1.HistoricalDataModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
